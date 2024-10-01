@@ -1,2 +1,0 @@
-dataset : https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
-deployment : https://huggingface.co/spaces/amariayudha/Diabetes_Prediction
