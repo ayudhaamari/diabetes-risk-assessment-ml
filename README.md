@@ -1,39 +1,62 @@
 # Diabetes Risk Prediction Model 🩺
 
+![Diabetes Prediction](/deployment/images/diabetes-ml.jpg)
 
+![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-orange.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Latest-green.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red.svg)
+![Plotly](https://img.shields.io/badge/Plotly-Latest-green.svg)
 
 ## 📊 Project Overview
 
-This project develops a machine learning model to predict an individual's risk of developing diabetes. Using the CDC Diabetes Health Indicators dataset, we've created a robust classification model that achieves over 80% recall in identifying potential diabetes cases.
-
-![Diabetes Prediction](/deployment/images/diabetes-ml.jpg)
-![Python](https://img.shields.io/badge/Python-3.9-blue.svg) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-orange.svg) ![Pandas](https://img.shields.io/badge/Pandas-Latest-green.svg) ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red.svg) ![Plotly](https://img.shields.io/badge/Plotly-Latest-green.svg)
+This project aims to develop a machine learning model that predicts an individual's risk of developing diabetes. By utilizing the CDC Diabetes Health Indicators dataset, we have created a robust classification model that achieves over 82% recall in identifying potential diabetes cases.
 
 ### 🎯 Objective
 
-To build a predictive model that can accurately assess an individual's likelihood of having or developing diabetes, enabling early intervention and better public health strategies.
+To build a predictive model that accurately assesses an individual's likelihood of having or developing diabetes, enabling early intervention and better public health strategies.
+
+## 📝 Table of Contents
+
+- [Key Features](#key-features)
+- [Results](#results)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Web Application](#web-application)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Prediction Module](#prediction-module)
+- [Model Inference](#model-inference)
+- [Key Insights](#key-insights)
+- [Future Work](#future-work)
+- [Author](#author)
+- [Links](#links)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## 🔍 Key Features
 
-- **Data Source**: CDC Diabetes Health Indicators dataset
-- **Primary Metric**: Recall (to minimize false negatives)
-- **Target Performance**: 80% recall within six months
-- **Models Evaluated**: KNN, SVM, Logistic Regression, Decision Tree, Random Forest, XGBoost
-- **Best Performing Model**: Support Vector Machine (SVM)
+- **Data Source**: CDC Diabetes Health Indicators dataset.
+- **Primary Metric**: Recall (to minimize false negatives).
+- **Target Performance**: Achieve at least 82% recall.
+- **Models Evaluated**: KNN, SVM, Logistic Regression, Decision Tree, Random Forest, XGBoost.
+- **Best Performing Model**: Support Vector Machine (SVM).
+- **Interactive Web Application**: Built with Streamlit for accessibility.
 
 ## 📈 Results
 
-- **Test Set Recall**: 82%
-- **Model Performance**: Consistent across train and test sets, indicating good generalization
+- **Test Set Recall**: 82%.
+- **Model Performance**: Consistent across training and test sets, indicating good generalization.
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas & NumPy
-- Scikit-learn
-- Streamlit
-- Plotly
-- Phik (for correlation analysis)
+- **Programming Language**: Python 3.9.
+- **Libraries**:
+  - Pandas & NumPy for data manipulation.
+  - Scikit-learn for model building.
+  - Streamlit for web application.
+  - Plotly for interactive visualizations.
+  - Phik for advanced correlation analysis.
 
 ## 📁 Project Structure
 
@@ -44,74 +67,128 @@ To build a predictive model that can accurately assess an individual's likelihoo
 │   ├── app.py
 │   ├── eda.py
 │   ├── prediction.py
+│   ├── images/
+│   │   └── diabetes-ml.jpg
 │   └── requirements.txt
 ├── notebooks/
 │   └── diabetes-prediction-inference.ipynb
-├── images/
-│   └── diabetes-ml.jpg
+├── models/
+│   └── tuned_model.pkl
 ├── README.md
-└── tuned_model.pkl
 ```
 
 ## 🚀 Getting Started
 
-1. Clone this repository
-2. Install required packages: `pip install -r deployment/requirements.txt`
-3. Run the Streamlit app: `streamlit run deployment/app.py`
+### Prerequisites
 
-## 📊 Key Insights
+- Python 3.9 or higher.
+- pip package manager.
 
-- Age group 60-64 has the highest prevalence of diabetes
-- BMI strongly correlates with diabetes risk
-- Physical activity and healthy diet are associated with lower diabetes risk
+### Installation
 
-## 🔮 Future Work
+1. **Clone the repository**:
 
-- Explore deep learning approaches
-- Implement real-time risk assessment system
-- Enhance model interpretability
+   ```bash
+   git clone https://github.com/your_username/diabetes-risk-prediction.git
+   cd diabetes-risk-prediction
+   ```
 
-## 👤 Author
+2. **Create a virtual environment** (optional but recommended):
 
-Ayudha Amari Hirtranusi
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-## 🔗 Links
+3. **Install required packages**:
 
-- [Dataset on UCI ML Repository](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators)
-- [Hugging Face Space](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)
+   ```bash
+   pip install -r deployment/requirements.txt
+   ```
 
-## 📄 License
+4. **Download the dataset**:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   Ensure the dataset `cdc_diabetes_health_indicators.csv` is in the `data/` directory.
 
-## 🖥️ Web Application
+### Running the Application
 
-The project includes a web application built with Streamlit. The application offers the following features:
-
-1. **Home Page**: Provides an overview of the project and model performance.
-2. **EDA (Exploratory Data Analysis)**: Allows users to explore the dataset through various visualizations.
-3. **Prediction**: Enables users to input their health information and receive a diabetes risk assessment.
-
-To run the web application:
+Start the Streamlit web application:
 
 ```bash
 streamlit run deployment/app.py
 ```
 
-For more details on the application structure, refer to `deployment/app.py`.
+The application will be available at `http://localhost:8501`.
+
+## 🖥️ Web Application
+
+The project includes a web application built with Streamlit, offering the following features:
+
+1. **Home Page**: Overview of the project and model performance.
+2. **EDA (Exploratory Data Analysis)**: Interactive exploration of the dataset.
+3. **Prediction**: Input health information to receive a personalized diabetes risk assessment.
+
+### Application Structure
+
+- **`app.py`**: Main application script.
+- **`eda.py`**: Contains the code for the EDA page.
+- **`prediction.py`**: Handles user input and displays predictions.
 
 ## 📊 Exploratory Data Analysis
 
-The EDA module provides interactive visualizations of the dataset. Users can select features for analysis and view distribution plots, box plots, and correlation heatmaps.
+The EDA module provides interactive visualizations of the dataset:
 
-For implementation details, see `deployment/eda.py`.
+- **Distribution Plots**: Understand the distribution of individual features.
+- **Correlation Heatmaps**: Analyze relationships between features.
+- **Box Plots**: Identify outliers and understand data spread.
+
+For implementation details, see [`deployment/eda.py`](deployment/eda.py).
 
 ## 🔍 Prediction Module
 
-The prediction module allows users to input their health information and receive a diabetes risk assessment based on the trained model.
+The prediction module allows users to input their health information and receive a diabetes risk assessment based on the trained SVM model.
 
-For the prediction implementation, refer to `deployment/prediction.py`.
+For the prediction implementation, refer to [`deployment/prediction.py`](deployment/prediction.py).
 
 ## 🧪 Model Inference
 
-For a detailed example of how to use the trained model for inference, check out the Jupyter notebook `diabetes-prediction-inference.ipynb`. This notebook demonstrates how to load the model and make predictions on new data.
+For a detailed example of how to use the trained model for inference, check out the Jupyter notebook [`diabetes-prediction-inference.ipynb`](notebooks/diabetes-prediction-inference.ipynb). This notebook demonstrates how to load the model and make predictions on new data.
+
+## 📊 Key Insights
+
+- **Age Factor**: Individuals aged 60-64 have the highest prevalence of diabetes.
+- **BMI Correlation**: Higher BMI is strongly associated with increased diabetes risk.
+- **Lifestyle Impact**:
+  - Regular physical activity is linked to lower risk.
+  - A healthy diet contributes to decreased risk.
+- **Comorbid Conditions**: High blood pressure and cholesterol levels are significant risk factors.
+
+## 🔮 Future Work
+
+- **Deep Learning**: Explore neural networks for potentially improved performance.
+- **Real-Time Assessment**: Implement a system for real-time risk assessment in clinical settings.
+- **Model Interpretability**: Enhance explainability using tools like SHAP or LIME.
+- **Feature Engineering**: Incorporate additional features or external datasets for better accuracy.
+
+## 👤 Author
+
+**Ayudha Amari Hirtranusi**
+
+- [LinkedIn](#)
+- [Email](mailto:your.email@example.com)
+
+## 🔗 Links
+
+- **Dataset**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators)
+- **Web Application**: [Hugging Face Space](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **UCI Machine Learning Repository** for providing the dataset.
+- **Open Source Community** for the amazing tools and libraries.
+
+---
