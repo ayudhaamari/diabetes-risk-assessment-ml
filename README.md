@@ -205,5 +205,7 @@ This project is licensed under the [MIT License](LICENSE).
 **Ayudha Amari Hirtranusi**
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=Linkedin&logoColor=white)]([your_linkedin_profile_link](https://www.linkedin.com/in/ayudhaamari/)) https://www.linkedin.com/in/ayudhaamari/
+
 [![Email](https://img.shields.io/badge/Email-D14836?logo=Gmail&logoColor=white)](mailto:amariayudha@gmail.com) amariayudha@gmail.com
+
 [![GitHub](https://img.shields.io/badge/GitHub-100000?logo=GitHub&logoColor=white)](https://github.com/ayudhaamari) https://github.com/ayudhaamari
