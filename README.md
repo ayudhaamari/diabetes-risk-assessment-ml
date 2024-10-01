@@ -18,21 +18,21 @@ To build a predictive model that accurately assesses an individual's likelihood 
 
 ## 📝 Table of Contents
 
-- [Key Features](#key-features)
-- [Results](#results)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Web Application](#web-application)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Prediction Module](#prediction-module)
-- [Model Inference](#model-inference)
-- [Key Insights](#key-insights)
-- [Future Work](#future-work)
-- [Author](#author)
-- [Links](#links)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [🔍 Key Features](#-key-features)
+- [📈 Results](#-results)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+- [🖥️ Web Application](#️-web-application)
+- [📊 Exploratory Data Analysis](#-exploratory-data-analysis)
+- [🔍 Prediction Module](#-prediction-module)
+- [🧪 Model Inference](#-model-inference)
+- [📊 Key Insights](#-key-insights)
+- [🔮 Future Work](#-future-work)
+- [🔗 Links](#-links)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+- [👤 Author](#-author)
 
 ## 🔍 Key Features
 
@@ -50,13 +50,13 @@ To build a predictive model that accurately assesses an individual's likelihood 
 
 ## 🛠️ Technologies Used
 
-- **Programming Language**: Python 3.9.
+- **Programming Language**: 🐍 Python 3.9.
 - **Libraries**:
-  - Pandas & NumPy for data manipulation.
-  - Scikit-learn for model building.
-  - Streamlit for web application.
-  - Plotly for interactive visualizations.
-  - Phik for advanced correlation analysis.
+  - 🐼 Pandas & 🔢 NumPy for data manipulation.
+  - 🧠 Scikit-learn for model building.
+  - 🌊 Streamlit for web application.
+  - 📊 Plotly for interactive visualizations.
+  - 🔗 Phik for advanced correlation analysis.
 
 ## 📁 Project Structure
 
@@ -92,7 +92,7 @@ To build a predictive model that accurately assesses an individual's likelihood 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your_username/diabetes-risk-prediction.git
+   git clone https://github.com/ayudhaamari/diabetes-risk-prediction.git
    cd diabetes-risk-prediction
    ```
 
@@ -185,13 +185,6 @@ For a detailed example of how to use the trained model for inference, check out 
 - **Model Interpretability**: Enhance explainability using tools like SHAP or LIME.
 - **Feature Engineering**: Incorporate additional features or external datasets for better accuracy.
 
-## 👤 Author
-
-**Ayudha Amari Hirtranusi**
-
-- [LinkedIn](#)
-- [Email](mailto:your.email@example.com)
-
 ## 🔗 Links
 
 - **Live Web Application**: [Diabetes Risk Prediction on Hugging Face Spaces](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)
@@ -207,4 +200,10 @@ This project is licensed under the [MIT License](LICENSE).
 - **Hugging Face** for hosting the web application.
 - **Open Source Community** for the amazing tools and libraries.
 
----
+## 👤 Author
+
+**Ayudha Amari Hirtranusi**
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=Linkedin&logoColor=white)]([your_linkedin_profile_link](https://www.linkedin.com/in/ayudhaamari/)) https://www.linkedin.com/in/ayudhaamari/
+[![Email](https://img.shields.io/badge/Email-D14836?logo=Gmail&logoColor=white)](mailto:amariayudha@gmail.com) amariayudha@gmail.com
+[![GitHub](https://img.shields.io/badge/GitHub-100000?logo=GitHub&logoColor=white)](https://github.com/ayudhaamari) https://github.com/ayudhaamari
