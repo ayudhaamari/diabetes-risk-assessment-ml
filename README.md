@@ -41,7 +41,7 @@ To build a predictive model that accurately assesses an individual's likelihood 
 - **Target Performance**: Achieve at least 82% recall.
 - **Models Evaluated**: KNN, SVM, Logistic Regression, Decision Tree, Random Forest, XGBoost.
 - **Best Performing Model**: Support Vector Machine (SVM).
-- **Interactive Web Application**: Built with Streamlit for accessibility.
+- **Interactive Web Application**: Deployed on Hugging Face Spaces for global accessibility.
 
 ## 📈 Results
 
@@ -112,7 +112,7 @@ To build a predictive model that accurately assesses an individual's likelihood 
 
 ### Running the Application
 
-Start the Streamlit web application:
+Start the Streamlit web application locally:
 
 ```bash
 streamlit run deployment/app.py
@@ -122,15 +122,29 @@ The application will be available at `http://localhost:8501`.
 
 ## 🖥️ Web Application
 
-The project includes a web application built with Streamlit, offering the following features:
+The project includes a web application built with Streamlit and deployed on **Hugging Face Spaces**, making it easily accessible to users worldwide.
+
+**Check out the live application here: [Diabetes Risk Prediction on Hugging Face Spaces](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)**
+
+### Application Features
 
 1. **Home Page**: Overview of the project and model performance.
+
+   ![Homepage Demo](path_to_homepage_demo.gif)
+
 2. **EDA (Exploratory Data Analysis)**: Interactive exploration of the dataset.
+
+   ![EDA Demo](path_to_eda_demo.gif)
+
 3. **Prediction**: Input health information to receive a personalized diabetes risk assessment.
+
+   ![Prediction Demo](path_to_prediction_demo.gif)
+
+*Note: Replace `path_to_homepage_demo.gif`, `path_to_eda_demo.gif`, and `path_to_prediction_demo.gif` with the actual paths to your GIF files.*
 
 ### Application Structure
 
-- **`app.py`**: Main application script.
+- **`app.py`**: Main application script that integrates all components.
 - **`eda.py`**: Contains the code for the EDA page.
 - **`prediction.py`**: Handles user input and displays predictions.
 
@@ -179,8 +193,8 @@ For a detailed example of how to use the trained model for inference, check out 
 
 ## 🔗 Links
 
+- **Live Web Application**: [Diabetes Risk Prediction on Hugging Face Spaces](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)
 - **Dataset**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators)
-- **Web Application**: [Hugging Face Space](https://huggingface.co/spaces/amariayudha/Diabetes_Prediction)
 
 ## 📄 License
 
@@ -189,6 +203,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - **UCI Machine Learning Repository** for providing the dataset.
+- **Hugging Face** for hosting the web application.
 - **Open Source Community** for the amazing tools and libraries.
 
 ---
