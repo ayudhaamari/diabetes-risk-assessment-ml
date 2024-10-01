@@ -90,8 +90,8 @@ def run():
         
         # Display dataset features in the first column
         with col1:
-            st.write("Diabetes Dataset Features:")
-            st.dataframe(data)
+            st.write("Diabetes Dataset Features (First 10 rows):")
+            st.dataframe(data.head(10))
         
         # Display target distribution in the second column
         with col2:
